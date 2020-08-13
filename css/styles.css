@@ -1,0 +1,11 @@
+.btn {
+  background-color: lightgrey;
+}
+
+#triangleType {
+  display: none;
+}
+
+#equilateral {
+  display: none;
+}
