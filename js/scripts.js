@@ -14,12 +14,21 @@ $(document).ready(function() {
     const sideA = parseInt($("input#sideA").val());
     const sideB = parseInt($("input#sideB").val());
     const sideC = parseInt($("input#sideC").val());
-   
 
     if (sideA === sideB && sideB === sideC) {
       $('#equilateral').show();
     } else {
       $('#equilateral').hide();
+    }
+    if (sideA === sideB && sideB > sideC || sideB === sideC && sideB > sideA || sideA === sideC && sideA > sideB) {
+      $('#isosceles').show();
+    } else {
+      $('#isosceles').hide();
+    }
+    if (sideA > sideB && sideB > sideC) {
+      $('#scalene').show();
+    } else {
+      $('#scalene').hide();
     }
   });
 });

@@ -2,10 +2,14 @@
   background-color: lightgrey;
 }
 
-#triangleType {
+#equilateral {
   display: none;
 }
 
-#equilateral {
+#isosceles {
+  display: none;
+}
+
+#scalene {
   display: none;
 }
